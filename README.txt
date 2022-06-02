@@ -11,7 +11,7 @@ You can click the Preview link to take a look at your changes.
 
 #include <iostream>
 #include <locale.h>
-#include<limits>
+
   
   using namespace std;
 
@@ -20,10 +20,12 @@ You can click the Preview link to take a look at your changes.
   int main () {
   setlocale(LC_ALL,"");/*set utf-8*/
   //code
-    while((!(cin >> answer)) || (answer > 6) || (answer < 0)){
+  }
+
+//limite inputs
+#include<limits>
+while((!(cin >> answer)) || (answer > 6) || (answer < 0)){
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cout << "apenas numeros entre 0 e 6\n";
     }
-  //
-  }
